@@ -1,0 +1,5 @@
+%h1= @pin.title
+%p= @pin.description
+
+%p= link_to "Delete", pin_path, method: :delete
+%p= link_to "Back", root_path
