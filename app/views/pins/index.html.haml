@@ -1,10 +1,10 @@
 %h1	You have #{Pin.all.count} Pins 
 
+%p= link_to "Add new Pin", new_pin_path
+
 - @pins.each do |p|
 	%h1= link_to p.title, p
 	%p= p.id
-
-%p= link_to "Add new Pin", new_pin_path
 
 %p= link_to "Show all titles", titles_path	
 
